@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - @localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="device">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="hotel"/>
+    <schema id="3" name="information_schema"/>
+    <schema id="4" name="library"/>
+    <schema id="5" name="mysql"/>
+    <schema id="6" name="performance_schema"/>
+    <schema id="7" name="sys"/>
+    <table id="8" parent="1" name="book_info"/>
+    <column id="9" parent="8" name="book_num">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="10" parent="8" name="book_name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="11" parent="8" name="book_writer">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="12" parent="8" name="publish_house">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="13" parent="8" name="publish_time">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="14" parent="8" name="book_price">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+  </database-model>
+</dataSource>
